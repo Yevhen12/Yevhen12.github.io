@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="header">
+        <h2>todos</h2>
+        <div class="wrapper">
+            <div class="todowrapper">
+                <div class="input_wrapper">
+                    <input id="input" type="text" placeholder="Type" id="description">
+                    <button id="btn"><img src="img/plus.png" alt=""></button>
+
+                </div>
+                <ul id="list__wrapper" class="list__wrapper">
+
+                </ul>
+
+                <ul class="functions__wrapper">
+
+                    <li class="items__left"><span>items left:<span id="total"> 0</span> </span></li>
+                    <ul class="block__functions">
+                        <li class="itens__all"><button id="all">All</button></li>
+                        <li class="items__ active"><button id="active">Active</button></li>
+                        <li class="items__completed1"><button id="complited">Completed</button></li>
+                    </ul>
+                    <li class="items__completed"><button id="clear__complited">Clear completed</button></li>
+                </ul>
+            </div>
+        </div>
+        <div class="change__theme">
+            <span>Dark side: </span>
+            <button class="theme" id="theme">
+                <i class="fas fa-circle anCircle" id = "circleChangeTheme" style></i>
+            </button>
+        </div>
+    </div>
+
+
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>

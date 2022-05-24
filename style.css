@@ -1,0 +1,305 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: -webkit-linear-gradient(180deg, #c5c5c5, #efefef, #d1d1d1);
+    background: linear-gradient(180deg, #c5c5c5, #efefef, #d1d1d1);
+}
+body.dark {
+    
+    background: rgb(78, 78, 78);
+    background: linear-gradient(0deg, rgba(78, 78, 78, 1) 0%, rgba(45, 45, 45, 1) 47%, rgba(17, 17, 17, 1) 100%);
+}
+body.dark .wrapper {
+    -webkit-box-shadow: 0px 0px 28px 9px rgba(224, 225, 227, 0.15);
+    -moz-box-shadow: 0px 0px 28px 9px rgba(224, 225, 227, 0.15);
+    box-shadow: 0px 0px 28px 9px rgba(224, 225, 227, 0.15);
+}
+
+body.dark .input_wrapper input[type="text"]{
+    background-color: rgb(61, 61, 61);
+    color: azure;
+}
+body.dark .input_wrapper input[type="text"]::placeholder{
+    color: azure;
+}
+body.dark .header h2 {
+    color: azure;
+}
+
+.header h2 {
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    font-weight: 400;
+    font-family: "Poiret One", cursive;
+    font-size: 110px;
+    color: rgb(122, 122, 122);
+}
+.wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    -webkit-box-shadow: 0px 0px 39px 7px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 0px 0px 39px 7px rgba(34, 60, 80, 0.2);
+    box-shadow: 0px 0px 39px 7px rgba(34, 60, 80, 0.2);
+    margin-top: 60px;
+}
+.input_wrapper {
+    display: flex;
+}
+.input_wrapper input {
+    height: 50px;
+    width: 450px;
+    border: none;
+    border-bottom: 1px solid rgba(167, 164, 164, 0.3);
+    padding-left: 30px;
+}
+.input_wrapper input :active,
+:hover,
+:focus {
+    outline: 0;
+    outline-offset: 0;
+}
+.input_wrapper input[type="text"] {
+    font-family: "Poiret One", cursive;
+    font-weight: 900;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: black;
+    font-size: 20px;
+}
+.input_wrapper input[type="text"]::placeholder {
+    font-family: "Poiret One", cursive;
+    font-weight: 700;
+    padding-left: 30px;
+    color: black;
+    opacity: 0.3;
+    font-size: 20px;
+}
+.input_wrapper button {
+    height: 50px;
+    width: 50px;
+    border-bottom: 1px solid rgba(167, 164, 164, 0.3);
+    border-left: 1px solid rgba(167, 164, 164, 0.3);
+    background-color: #fff;
+}
+body.dark .input_wrapper button{
+    background-color: rgb(61, 61, 61);
+    color: azure;
+}
+.input_wrapper button img {
+    width: 25px;
+    height: 25px;
+    opacity: 0.5;
+}
+.functions__wrapper {
+    background-color: #fff;
+    max-width: 500px;
+    height: 35px;
+}
+body.dark .functions__wrapper{
+    background-color: rgb(61, 61, 61);
+    color: azure;
+}
+.functions__wrapper li span {
+    font-size: 14px;
+}
+button {
+    font-family: "Poiret One", cursive;
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+.functions__wrapper li button {
+    font-size: 12px;
+}
+#all {
+    height: 20px;
+    width: 25px;
+}
+#active {
+    height: 20px;
+    width: 45px;
+}
+#complited {
+    height: 20px;
+    width: 70px;
+}
+#clear__complited {
+    height: 20px;
+    width: 100px;
+    display: inline-block;
+}
+/*поставити висоту і довжину кожній кнопці шоб ховвер працював*/
+.borderBtn {
+    border: 1px solid rgba(167, 164, 164, 0.3);
+    border-radius: 4px;
+}
+
+.functions__wrapper {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Poiret One", cursive;
+}
+body.dark .functions__wrapper li button{
+    color: azure;
+}
+.block__functions {
+    display: flex;
+    justify-content: space-between;
+}
+body.dark .block__functions li button{
+    background-color: rgb(61, 61, 61);
+    color: azure;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    font-family: "Poiret One", cursive;
+}
+li {
+    margin-top: 5px;
+    list-style-type: none;
+    margin-right: 15px;
+}
+.items__completed1 {
+    margin-right: 0;
+}
+li button {
+    font-family: "Poiret One", cursive;
+    font-weight: 500;
+}
+.items__left {
+    margin-left: 20px;
+}
+.list__item ::before {
+    height: 20px;
+    width: 20px;
+}
+
+.list__item {
+    margin: 0;
+    padding: 0;
+    height: 50px;
+    width: 500px;
+    background-color: #fff;
+    border-bottom: 1px solid rgba(167, 164, 164, 0.3);
+    font-family: "Poiret One", cursive;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+}
+body.dark .list__item {
+    background-color: rgb(61, 61, 61);
+    color: azure;
+}
+body.dark .far {
+    color: azure;
+    opacity: 0.7;
+}
+.list__item__hide {
+    display: none;
+}
+
+.list__text {
+    padding: 0;
+    margin: 0;
+    font-family: "Poiret One", cursive;
+    font-weight: 700;
+    padding-top: 15px;
+}
+.list__text1 {
+    padding: 0;
+    margin: 0;
+    font-family: "Poiret One", cursive;
+    font-weight: 700;
+    padding-top: 15px;
+    text-decoration: line-through;
+    color: rgb(137, 138, 141);
+    transition: 0.3s;
+}
+.delete__img {
+    display: none;
+    width: 20px;
+    height: 20px;
+}
+.delete__elem {
+    display: none;
+    height: 50px;
+    width: 50px;
+}
+.inner__block {
+    display: flex;
+}
+
+.list__button {
+    margin-top: 12px;
+    margin-right: 25px;
+    margin-left: 20px;
+    height: 23px;
+    width: 23px;
+    position: relative;
+}
+.far {
+    font-size: 23px;
+}
+.fa-circle {
+    opacity: 0.2;
+}
+.fa-check {
+    color: rgb(78, 175, 78);
+    position: absolute;
+    top: 4px;
+    left: 5px;
+    margin-bottom: 20px;
+}
+.change__theme {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Poiret One", cursive;
+    text-align: center;
+    margin: 0 auto;
+    width: 300px;
+    height: 70px;
+    margin-top: 50px;
+}
+.change__theme span {
+    opacity: 0.6;
+    font-size: 18px;
+    font-weight: 700;
+}
+body.dark .change__theme span{
+    color: azure;
+}
+
+.theme {
+    width: 80px;
+    margin-left: 30px;
+    background-color: rgb(235, 232, 232);
+    height: 30px;
+    border: 2px solid rgba(167, 164, 164, 0.3);
+    border-radius: 20px;
+    font-family: "Poiret One", cursive;
+    font-weight: 700;
+    position: relative;
+}
+.anCircle {
+    font-size: 20px;
+    opacity: 1;
+    color: white;
+    position: absolute;
+    top: 2px;
+    left: 5px;
+}
